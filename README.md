@@ -8,9 +8,9 @@ API for creating a bot with a set of personalities and chat with it! This is a s
 
 ### Create a chatbot
 
-**Endpoint:** POST /api/chatbot/create
-**Content Type:** application/json
-**Body:**
+**Endpoint:** POST /api/chatbot/create  
+**Content Type:** application/json  
+**Body:**  
 
 ```
 {
@@ -19,7 +19,7 @@ API for creating a bot with a set of personalities and chat with it! This is a s
 }
 ```
 
-**Response:**
+**Response:**  
 
 ```
 {
@@ -30,8 +30,8 @@ API for creating a bot with a set of personalities and chat with it! This is a s
 
 ### Get a chatbot
 
-**Endpoint:** GET /api/chatbot/:id
-**Response:**
+**Endpoint:** GET /api/chatbot/:id  
+**Response:**  
 
 ```
 {
@@ -42,9 +42,9 @@ API for creating a bot with a set of personalities and chat with it! This is a s
 
 ### Add a personality trait
 
-**Endpoint:** POST /api/personality/add
-**Content Type:** application/json
-**Body:**
+**Endpoint:** POST /api/personality/add  
+**Content Type:** application/json  
+**Body:**  
 
 ```
 {
@@ -53,12 +53,12 @@ API for creating a bot with a set of personalities and chat with it! This is a s
 }
 ```
 
-**Response:** No Response
+**Response:** No Response  
 
 ### Get a chatbot's personality traits
 
-**Endpoint:** GET /api/personality/:id
-**Response:**
+**Endpoint:** GET /api/personality/:id  
+**Response:**  
 
 ```
 {
@@ -72,8 +72,8 @@ API for creating a bot with a set of personalities and chat with it! This is a s
 
 ### Get the dialogue with a chatbot
 
-**Endpoint:** GET /api/dialogue/:id
-**Response:**
+**Endpoint:** GET /api/dialogue/:id  
+**Response:**  
 
 ```
 {
@@ -87,9 +87,9 @@ API for creating a bot with a set of personalities and chat with it! This is a s
 
 ### Converse with a chatbot
 
-**Endpoint:** POST /api/converse
-**Content Type:** application/json
-**Body:**
+**Endpoint:** POST /api/converse  
+**Content Type:** application/json  
+**Body:**  
 
 ```
 {
@@ -98,7 +98,7 @@ API for creating a bot with a set of personalities and chat with it! This is a s
 }
 ```
 
-**Response:**
+**Response:**  
 
 ```
 i'm a surfing enthusiast.
