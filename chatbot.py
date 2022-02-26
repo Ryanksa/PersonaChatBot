@@ -44,26 +44,18 @@ def generate_next(bot_input_ids, do_sample=True, top_k=10, top_p=.92,
     return msg
 
 
-default_persona = [
-    "I am kind and caring.",
-    "I love baking sweets and confections.",
-    "I enjoy hanging out at the cafe on a peaceful afternoon"
-]
-
-"""
-@param dialog: List of string representing the chat history so far
-@param personas: List of string to specify the chatbot's personality
-@return: chatbot's message
-"""
 def converse(dialog, persona):
+    """
+    @param dialog: List of string representing the chat history so far
+    @param personas: List of string to specify the chatbot's personality
+    @return: chatbot's message
+    """
     # encode dialog
     dialog_hx = []
     for text in dialog:
         dialog_hx.append(tokenizer.encode(text + tokenizer.eos_token))
 
     # encode persona
-    if persona is None:
-        personas = default_persona
     personas = tokenizer.encode(
         ''.join(['<|p2|>'] + persona + ['<|sep|>'] + ['<|start|>']))
 
