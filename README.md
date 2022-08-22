@@ -1,4 +1,4 @@
-# Project: PersonaChatBot
+# PersonaChatBot
 
 ## Description
 
@@ -64,9 +64,9 @@ API for creating a bot with a set of personalities and chat with it! This is a s
 {
 	"id": "dX7IEgjCI0k5yJZm",
 	"personalities": [
-    "My name is Anatroc",
-    "I like surfing and birdwatching"
-  ]
+    		"My name is Anatroc",
+    		"I like surfing and birdwatching"
+  	]
 }
 ```
 
@@ -79,9 +79,9 @@ API for creating a bot with a set of personalities and chat with it! This is a s
 {
 	"id": "dX7IEgjCI0k5yJZm",
 	"dialogue": [
-    "Hello there!",
-    "hi there! whats your favorite activity?"
-  ]
+    		"Hello there!",
+    		"hi there! whats your favorite activity?"
+  	]
 }
 ```
 
